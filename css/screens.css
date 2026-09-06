@@ -69,9 +69,11 @@
 
 .choice-pill[data-value="random"] {
   width: auto;
-  border-radius: 40px;
-  padding: 0 1.6rem;
+  min-width: 140px;
+  border-radius: 42px;
+  padding: 0 1.8rem;
   font-size: 1.4rem;
+  height: 84px;
 }
 
 .choice-pill:hover {
@@ -161,11 +163,12 @@
   }
 
   .choice-pill[data-value="random"] {
-    padding: 0 1rem;
-    font-size: 1rem;
-    height: auto;
-    min-height: 54px;
-    padding: 0.7rem 1.2rem;
+    min-width: 110px;
+    height: 54px;
+    border-radius: 27px;
+    padding: 0 1.3rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
   }
 
   .nav-row {
@@ -193,5 +196,13 @@
     width: 44px;
     height: 44px;
     font-size: 1.1rem;
+  }
+
+  .choice-pill[data-value="random"] {
+    min-width: 100px;
+    height: 44px;
+    border-radius: 22px;
+    padding: 0 1rem;
+    font-size: 0.85rem;
   }
 }
