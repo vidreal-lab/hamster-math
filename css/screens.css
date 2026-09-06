@@ -126,3 +126,70 @@
   cursor: not-allowed;
   transform: none;
 }
+
+@media (max-width: 700px) {
+  .choice-row {
+    gap: 1rem;
+  }
+
+  .choice-card {
+    padding: 0.8rem;
+    min-width: 140px;
+    border-radius: 20px;
+    gap: 0.5rem;
+  }
+
+  .choice-preview {
+    width: 100px;
+    height: 100px;
+  }
+
+  .choice-card span {
+    font-size: 1rem;
+  }
+
+  .choice-row-numbers {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .choice-row-numbers .choice-pill {
+    width: 54px;
+    height: 54px;
+    font-size: 1.3rem;
+  }
+
+  .choice-pill[data-value="random"] {
+    padding: 0 1rem;
+    font-size: 1rem;
+    height: 54px;
+  }
+
+  .nav-row {
+    margin-top: 1.2rem;
+  }
+
+  .btn-next,
+  .btn-back {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .choice-card {
+    min-width: 110px;
+  }
+
+  .choice-preview {
+    width: 80px;
+    height: 80px;
+  }
+
+  .choice-row-numbers .choice-pill {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+}

@@ -247,11 +247,15 @@ const Hamster = (() => {
     return { w: parts[2], h: parts[3] };
   }
 
-  function drawInScene(sceneSvg, type, mood) {
+  // placement — { cx, cy, size } из раскладки сцены. Если не передан,
+  // считаем позицию из viewBox (как раньше).
+  function drawInScene(sceneSvg, type, mood, placement) {
     const pal = palettes[type] || palettes.rusty;
     const { w, h } = getViewBox(sceneSvg);
-    const size = h * 0.34;
-    sceneSvg.appendChild(buildHamster(w * 0.5 - 20, h * 0.88, size, pal, mood || "calm"));
+    const cx = placement ? placement.cx : w * 0.5 - 20;
+    const cy = placement ? placement.cy : h * 0.88;
+    const size = placement ? placement.size : h * 0.34;
+    sceneSvg.appendChild(buildHamster(cx, cy, size, pal, mood || "calm"));
   }
 
   document.addEventListener("DOMContentLoaded", initPreviews);
