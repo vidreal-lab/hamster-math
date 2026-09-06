@@ -65,9 +65,9 @@ const GameScreen = (() => {
       sign: { x: hamsterCx, y: hamsterCy - hamsterSize * 0.28 },
       seedScale: 1.35,
       seeds: [
-        { x: dx + 620, y: h * 0.85 },
-        { x: dx + 700, y: h * 0.85 },
-        { x: dx + 780, y: h * 0.85 },
+        { x: dx + 520, y: h * 0.85 },
+        { x: dx + 600, y: h * 0.85 },
+        { x: dx + 680, y: h * 0.85 },
       ],
     };
   }
