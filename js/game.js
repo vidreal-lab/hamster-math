@@ -91,31 +91,31 @@ const GameScreen = (() => {
       "data-sign": "1"
     });
 
-    // Деревянная доска
+    // Деревянная доска (увеличена на 20%)
     g.appendChild(el("rect", {
-      x: -70, y: -35, width: 140, height: 70, rx: 4,
+      x: -84, y: -42, width: 168, height: 84, rx: 4,
       fill: "#8b6f47", stroke: "#5d4a2f", "stroke-width": 2
     }));
 
     // Текстура дерева (полоски)
     g.appendChild(el("rect", {
-      x: -65, y: -30, width: 130, height: 3,
+      x: -78, y: -36, width: 156, height: 3,
       fill: "#6b5537", opacity: 0.4
     }));
     g.appendChild(el("rect", {
-      x: -65, y: -15, width: 130, height: 2,
+      x: -78, y: -18, width: 156, height: 2,
       fill: "#6b5537", opacity: 0.3
     }));
     g.appendChild(el("rect", {
-      x: -65, y: 10, width: 130, height: 2,
+      x: -78, y: 12, width: 156, height: 2,
       fill: "#6b5537", opacity: 0.3
     }));
 
-    // Текст примера
+    // Текст примера (увеличен на 20%)
     const textEl = el("text", {
-      x: 0, y: 8,
+      x: 0, y: 10,
       "text-anchor": "middle",
-      "font-size": text.length > 4 ? 28 : 36,
+      "font-size": text.length > 4 ? 34 : 43,
       "font-weight": "bold",
       fill: "#ffffff",
       "font-family": "Comic Sans MS, sans-serif"
