@@ -74,6 +74,9 @@
   padding: 0 1.8rem;
   font-size: 1.4rem;
   height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .choice-pill:hover {
@@ -169,6 +172,9 @@
     padding: 0 1.3rem;
     font-size: 0.95rem;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-row {
@@ -204,5 +210,8 @@
     border-radius: 22px;
     padding: 0 1rem;
     font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
