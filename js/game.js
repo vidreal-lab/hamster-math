@@ -38,9 +38,9 @@ const GameScreen = (() => {
       // Телефон вертикально: хомяк с табличкой внизу, семечки рядком над ним.
       const size = h * 0.3;
       const cx = w * 0.5;
-      const cy = h * 0.96;
+      const cy = h * 0.82;
       const gap = Math.min(w * 0.3, 95);
-      const seedY = h * 0.4;
+      const seedY = h * 0.32;
       return {
         w, h, portrait,
         hamster: { cx, cy, size },
