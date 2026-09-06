@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хомяк учит умножение</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/screens.css">
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+
+<!-- Экран 1: выбор хомяка -->
+<section class="screen" id="screen-hamster" data-screen>
+  <h1>Выбери хомяка</h1>
+  <div class="choice-row" data-choice-group="hamster">
+    <button class="choice-card" data-value="rusty">
+      <svg class="choice-preview" viewBox="0 0 200 200" data-hamster-preview="rusty"></svg>
+      <span>Рыжик</span>
+    </button>
+    <button class="choice-card" data-value="grey">
+      <svg class="choice-preview" viewBox="0 0 200 200" data-hamster-preview="grey"></svg>
+      <span>Дымок</span>
+    </button>
+    <button class="choice-card" data-value="white">
+      <svg class="choice-preview" viewBox="0 0 200 200" data-hamster-preview="white"></svg>
+      <span>Снежок</span>
+    </button>
+  </div>
+  <div class="nav-row">
+    <span class="nav-spacer"></span>
+    <button class="btn-next" data-next>Дальше →</button>
+  </div>
+</section>
+
+<!-- Экран 2: настройки -->
+<section class="screen" id="screen-settings" data-screen hidden>
+  <h1>Настройки</h1>
+
+  <h2>Какое число учим?</h2>
+  <div class="choice-row choice-row-numbers" data-choice-group="number">
+    <button class="choice-pill" data-value="2">2</button>
+    <button class="choice-pill" data-value="3">3</button>
+    <button class="choice-pill" data-value="4">4</button>
+    <button class="choice-pill" data-value="5">5</button>
+    <button class="choice-pill" data-value="6">6</button>
+    <button class="choice-pill" data-value="7">7</button>
+    <button class="choice-pill" data-value="8">8</button>
+    <button class="choice-pill" data-value="9">9</button>
+    <button class="choice-pill" data-value="random">Вперемешку</button>
+  </div>
+
+  <div class="nav-row">
+    <button class="btn-back" data-back>← Назад</button>
+    <button class="btn-next" data-next>Играть! →</button>
+  </div>
+</section>
+
+<!-- Экран 4: игра -->
+<section class="screen screen-game" id="screen-game" data-screen hidden>
+  <svg id="forest-scene" viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice"></svg>
+
+  <button class="btn-back btn-back-game" data-to-settings>← Настройки</button>
+
+  <div id="practice-score" class="practice-score" hidden>
+    Правильно: <span id="score-correct">0</span> из <span id="score-total">0</span>
+  </div>
+
+  <button id="btn-mistake-review" class="btn-mistake-review" hidden>Работа над ошибками</button>
+
+  <div id="mistake-count" class="mistake-count" hidden>
+    Осталось ошибок: 0
+  </div>
+</section>
+
+<script src="js/state.js"></script>
+<script src="js/math.js"></script>
+<script src="js/hamster.js"></script>
+<script src="js/forest.js"></script>
+<script src="js/leaf.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
